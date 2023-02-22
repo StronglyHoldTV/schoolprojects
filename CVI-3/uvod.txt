@@ -1,0 +1,60 @@
+Python
+
+>>> = sa nazýva prompt
+
+hodnoty - 
+	èiselné (celé, desatinné) (int, float - iba to je nuda),
+		pri desatinných èísla nie sú operácie presné 
+	znakové;
+
+Èíselné operácie
+	+,
+	-,
+	/ (výsledok **vždy** float),
+	// (celoèíselné delenie), 
+	% (modulo - zvyšok),
+	*,
+	** (umocnenie),
+
+
+Znakové operácie
+	+ (zloži do hromady - zreazí),
+	* (opakova text i krát = viacnásobné retazenie) "text"*i
+	, () 
+
+
+
+
+type(x: any)	zistí typ x
+
+zmena typu float(any: x); int(any: x), string(any: x), ...
+
+string v úvodzovkách '', ""
+
+Premenná
+	referencia - x = "value"
+	= (v pythone) docastne meno pre existujucu hodnotu
+		- pozná pamä mien a pamä hodnôt
+		=> spája hodnotu a meno => inak ako C-like jazyky
+		=> dve mená môžu ukazova na istú hodnotu => menej miesta
+
+input = *vzdy* string
+
+
+**string je iba str**
+
+
+functions
+   built-it
+	type()
+	str()
+	print()
+	help()
+	round(value, pocet-desatinnych-miest: int)
+	abs()
+	...
+
+	
+
+	
+

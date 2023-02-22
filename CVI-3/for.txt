@@ -1,0 +1,26 @@
+for i in range(min: int):
+for i in range(min: int, max: int):
+for i in range(min: int, max: int, step: int = 1):
+     < premenna cyklu
+
+for i in 2,3,5,4,8,7
+for i in 'a','b','c','d','e'
+for i in 'asfdhjasfhjkasfhkj'
+for i in reversed(range(10, 20))
+
+v pythone nemôeš to i potom v kode meni !! divné -- v Jave to ide
+
+
+
+
+
+
+
+
+
+
+formatovany string
+
+f'x:pocetZnakov:int.pocetDesatinnychMiest:int'f''
+f'x:5.5f'	=> 5 znakov 5 desatinnych miest-
+	
