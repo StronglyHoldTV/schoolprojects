@@ -1,0 +1,22 @@
+podmienky
+
+if condition:
+	statement
+elif condiction: !!
+	statement
+else:
+	statement
+
+
+inline = 'statement if true' if condiction else 'statement if false'
+
+logicke operatory:
+
+or 
+
+and
+
+not
+
+== <= >= !=
+   <  > 
