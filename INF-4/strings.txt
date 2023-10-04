@@ -1,0 +1,60 @@
+String = postuponost znakov uzavreta v "" alebo ''
+zre�azenie "str"+"str"
+n�sovenie "str"*3 = "strstrstr"
+
+je to vystup input-u => treba to pretypovat ked chceme ratat
+
+for i in "ABCDEF":
+	bude postupne prech�dza� p�smen� stringu
+
+\n = new line => print sko�� na da��iu riadok
+\t = tab 
+
+print("ABC\nEFG") = ABC
+		    EFG
+
+print("ABC\tEFG") = ABC		EFG 
+
+Co ked chcem v stringu mat uvodozovky??
+
+print("ABC\"EFG") ABC"EFG
+print("ABC\\EFG") ABC\EFG
+
+Specialne text na viac riadkov
+
+"""Lorem ipsum dolor sit amet,
+ consectetur adipiscing elit.
+ Phasellus lobortis dui eu quam maximus,
+ volutpat scelerisque ligula vulputate.
+ Maecenas volutpat metus massa, et malesuada
+ erat rutrum posuere. Curabitur vel eros nec
+ dui iaculis bibendum eget vel massa."""
+
+len() - built-in function to get lenght of array
+'a' in 'string' - zisti ci 'string' obsahuje string 'a'
+
+"ABCDEF"[0] = character at place 0 = 'A' 
+ 012345	      Mame nadherny OutOfRangeException, ktory vsetci radi vidime
+	      ale aj tak stale lepsi ako NullPointerException
+
+Rez stringom
+"ABCDEF"[:3] = "ABC"
+"ABCDEF"[2:] = "CDEF" = bez tych prvych
+"ABCDEF"[from-int:till-int:step-int] = ked nechas prazdne from tak je to 0
+				       ked nechas prazdne till tak je to koniec retazca 
+
+python vie aj index -1, -2, -3 ...
+takze
+"ABDGIHASOG"[-1] "ABDGIHASOG"[len("ABDGIHASOG")-1]
+"ABDGIHASOG"[-6] "ABDGIHASOG"[len("ABDGIHASOG")-6]...
+
+nedokazeme menit priradene hodnoty v stringu => nie je mutable
+
+daju sa poravnavat aj znaky
+
+'a' > 'x' == false
+porovnava kody z ascii tabulky - je to potom ale zahadne
+
+ord('A') -> int - returne hodnotu unicode daneho znaku
+chr('65') -> str - returne pismeno ktore pouziva dany ascii code
+ord("A") ord("J")
