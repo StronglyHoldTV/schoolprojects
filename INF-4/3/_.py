@@ -1,5 +1,9 @@
-subor = open('cvicny.txt', 'r')
-subor2 = open('cvicny.txt', 'w')
-subor.write('-------')
+with open('cvicny.txt', 'r') as subor:
+    with open('cvicny2.txt', 'w') as subor2:
+        #subor2.write(subor.read())
+        print(subor.read(), file=subor2)
+with open('cvicny2.txt', 'a') as s:
+    print("Hello", file=s)
 
-subor.close()
+with open('cvicny2.txt', 'r') as r:
+    print(repr(r.read()))
