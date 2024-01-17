@@ -1,0 +1,59 @@
+ZOZNAMY
+      -5 -4 -3 -2 -1
+index  0  1  2  5  6
+  a = [1, 2, 3, 4, 5]
+       ---> prvky zoznamu oddelujeme ciarkami
+a[0] ---> indexovanie zacina od 0
+!!pozor na out-of-range!!
+ide aj od konca vyberat a[-1], a[-2], ...
+
+v zozname moze byt aj zoznam
+a = ['pato', ['chyta', 'ryby'], 'edo', ['opravuje', 'auto']]
+!!je to python takze nezalezi na type premennej v zozname
+	=> mozu sa miesat
+[1, 2]+[1, 2] = [1, 2, 1, 2] - no nie je to zaujimave??
+a=['f']
+a*=10
+['f', 'f', 'f', ..., 'f']
+
+any in list -> Bool
+!! stringy nie su ignoreCase
+
+list.append(any) --> prida nieco na koniec zoznamu
+
+vieme ho prechadzat cez for
+
+for item in list:
+
+sum(list) - sucet listu
+len(list) - dlzka listu
+max(list, key = len) - najdlhsi item listu
+	  key = func
+
+list(filter(lambda item: podmienka, list)) --> filter listu cez lambdu
+filtered_scores = [s for s in scores if s >= 150]
+
+zoznam je iterable => je mozne zmenit hodnoty, pridat, odobrat
+list.append(any) - prida nakoniec
+list[3] = any - nastavy item na any
+list.remove(any) - odstany so zoznamu any
+list.pop(int) - odstany item v poradi int	del list[int] - spravi to iste
+list.clear() - vyprazni cely zoznam
+list.index(any) - index any 
+
+list(range(...)) - dokazas si takto list spravit
+
+porovnavanie zoznamov
+
+a = [5, 'a', 2023]
+b = [5, 'b', 2013]
+
+a > b --> ide prvok po prvku a porovnava; naco to je dobre?
+	ak su rovne tak preskakuje
+a == b
+
+https://www.w3schools.com/python/python_lists_methods.asp
+
+
+
+
