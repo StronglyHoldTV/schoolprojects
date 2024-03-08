@@ -1,0 +1,19 @@
+tkinter
+
+farba1, farba2 = farba2, farba1
+
+// from random import *
+
+Canvas(width: int, height: int, bg: string = "#FFFFFF", )
+
+create_rectangle, oval, polygon, 
+create_text(x:int, y:int, text:string, angel:int=0),
+create_image(x: int, y: int, image: PhotoImage) // .png .gif
+create_image(x: int, y: int, image: BitmapImage) //.xbm
+
+tk.BitmapImage(file=f[, background=b][, foreground=c])
+tk.PhotoImage(file=f)
+
+!! create_line(arrow = 'first') !!
+
+

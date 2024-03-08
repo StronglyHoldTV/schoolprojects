@@ -1,0 +1,36 @@
+Textovy subor = postupnost riadkov (riadok konci - \n)
+Praca s txt pozostava
+	viem kde je txt - cesta k nemu
+	viem jeho nazov - "cvicny.txt"
+	musim ho otvorit (subor = open(nazovTxt:str, 'r(ead)/w(rite)/a(ppend)', encoding="utf-8"))
+		vytvorim suborovu premennu
+	robim zmeny/citam
+
+	subor.readline() - precita prvy riadok - readline(obsahuje \n)
+
+	dokazem aj for-cyklom
+	---------------------
+	for riadok in subor:
+		print(riadok, end="")
+	
+	riadok = readline()
+	while riadok != ''
+		print(riadok, end="")
+		riatok = readline()
+	
+	---------------------
+
+	alebo dokazem precitat cely subor
+	subor.print()
+
+	riadok.strip() -> odstani koniec riadku a medzery na zaciatku a na konci
+	       rstrip()
+	       lstrip()
+	       - strip iba z jednej strany
+	repr(riadok) -> spravi s toho nieco
+	subor.close() zavriem subor
+
+
+	!!! ked otvaram na zapis (open(... , 'w')) maze subor 
+	subor.write(s:str)	
+	

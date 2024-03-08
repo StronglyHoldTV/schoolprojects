@@ -1,0 +1,10 @@
+a = input('zadaj 1. slovo: ')
+b = input('zadaj 2. slovo: ')
+c = input('zadaj 3. slovo: ')
+
+print(a, b, c)
+print(a, c, b)
+print(b, a, c)
+print(b, c, a)
+print(c, a, b)
+print(c, b, a)
