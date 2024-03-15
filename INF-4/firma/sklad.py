@@ -15,21 +15,25 @@ def hepl():     #vypise vsetky commands
     print(com_dict.keys())
 
 def list():     #vypise vsetky objekty v Stock
+    read_file()
     print("-"*60)
     for i,object in enumerate(stock_objects):
         print(f"{i+1}. Name: {object.name: <12}Count: {object.count: <12}Unit price: {object.price: <12}")
     print("-"*60)
 
 def add():      #ziska user input a posle dalej do add_object
+    read_file()
     name = input("Name of the product: ")
     count = int(input("Number of items: "))
     price = float(input("Set a unit price: "))
     add_object(name,count,price)
 
 def clear():    #prepise textak na blank a clearne list s objectami
+    
     if input("Are you sure? Clear the database - type: \"Y\"/\"N\" ") != "Y":
         pass
     else:
+        read_file()
         file = open(database,"w",encoding="UTF-8")
         stock_objects.clear()
         file.close()
@@ -38,6 +42,8 @@ def read_file():    #precita textak a zapise kazdu line ako objekt do Stock
     file = open(database,"r",encoding="UTF-8")
     stock_objects.clear()
     for line in file:
+        if line == '\n':
+            continue
         properties = line.split(" ")
         add_object(properties[0],int(properties[1]),float(properties[2]))
     file.close()
@@ -49,6 +55,7 @@ def save():     #prepise textak objektami zo Stocku
     file.close()
 
 def edit():
+    read_file()
     num = int(input("Number of the product to be edited: "))-1
     name = input("Edit name (blank if unchanged): ")
     count = input("Edit number of items (blank if unchanged): ")
@@ -61,6 +68,7 @@ def edit():
         stock_objects[num].price = float(price)
 
 def remove():
+    read_file()
     num = int(input("Number of the product to be removed (0 to cancel): "))-1
     if num != -1:
         stock_objects.pop(num)
