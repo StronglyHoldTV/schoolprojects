@@ -1,0 +1,34 @@
+n-tice - tuplets
+
+///////////////
+a = [2,3,4,5,6]
+b = a
+b[1] = 'X'
+stale b = a
+///////////////
+
+su nemenitelne -- is iterable is not mutable --
+vsetko ako pri zoznamoch okrem metod, ktore ich menia
+	teda napr. pop remove insert append ...
+pouziva bezne zatrvorky ('a', 'b', ...)
+	ale nemusia sa pisat 'a', 'b', ...
+     !! potom problem ked si napises iba ciatku - 'a', - moze vytvorit ('a',)
+
+tuple("python") = ('p', 'y', 't', 'h', 'o', 'n')
+
+n = (2,5,9,10,11);
+n = n[:1] + (6,7) + n[1:]
+
+mozem ich pouzit na uskladnenie bodov polygonu
+a = 200,500
+b = 300, 600
+c = 400, 400
+
+body = a,b,c
+body2 = e,f,g
+
+utvary = (body, 'green'), (body2, 'red')
+
+for u, f in utvary:
+	c.create_polygon(u, fill=f)
+c.create_polygon(body, fill='green')
