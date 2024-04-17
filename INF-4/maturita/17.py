@@ -16,7 +16,7 @@ def run():
     global angle
     while isRunning:
         c.after(100)
-        c.delete('all') # toto vymazat necha ciaru
+        #c.delete('all') # toto vymazat necha ciaru
         c.create_oval(x-10, y-10, x+10, y+10)
         c.update()
         x = x+speed*m.cos(angle)
